@@ -31,10 +31,17 @@ body {
   }
   .navbar-1 .contact{
     display: flex;
+    
+  }
+  .navbar .phone i{
+    margin-left: 10px;
   }
   .navbar .phone{
     width: 50%;
     padding-right: 50%;
+  }
+  .navbar .phone i span{
+    font-family: 'Courier New', Courier, monospace;
   }
   .navbar .follow{
     width: 50%;
@@ -48,6 +55,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     display: block;
+    z-index: 1;
   }
   
   .navbar .logo{
@@ -74,7 +82,7 @@ body {
   }
   .navbar .icon{
     /* background-color: #020202; */
-    width: 25%;
+    width: 30%;
     margin: auto;
   }
   .navbar .icon i{
@@ -82,9 +90,9 @@ body {
   }
   .navbar ul {
     display: flex;
-    gap: 1rem;
-    width: 50%;
-    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
     /* background-color: #020202; */
   }
   
@@ -130,7 +138,10 @@ body {
   .service h3 {
     color: #27ae60;
   }
-  
+  .service h3 i{
+    font-size: 30px;
+    margin-right: 5%;
+  }
   /* Portfolio Section */
   .portfolio {
     padding: 2rem;
@@ -163,14 +174,22 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+  
   }
   
-  .portfolio-item {
+  .portfolio-item { 
     background: #ddd;
-    height: 200px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    object-fit: fill;
+    box-shadow: 0 0 5px rgb(68, 67, 67);
   }
+  .portfolio-item img{
+    width: 100%;
+    height: 100%;
+  }
+  
   
